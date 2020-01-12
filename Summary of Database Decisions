@@ -1,0 +1,38 @@
+	To start, we found every piece of data that should be a primary key or have a unique 
+  ID and separated them to get a better grasp on all the data. We wanted to keep all the 
+  info for each tenant in the Tenant table, with the addition of the TenantPhone table 
+  solving the problem of them having multiple phones. From this point we could determine 
+  which TenantID is living in which ApartmentID and BuildingID. We did not use the 
+  apartment number as the ID because some of the numbers repeated in different buildings.
+	
+	Within all the building information we had to separate the data into Building, 
+  Administrator, AdminPhone, and Janitor tables. Since there is an Administrator and 
+  Janitor for each building, we found it beneficial that they had their own tables. 
+  Along with AdminPhone being a table full of phone numbers for Administrators if they 
+  have multiple phones.
+
+	We also created the ResidentAssitatant table which assigned each resident assistant an 
+  ID named RAID, and together with ApartmentID and TenantID, shows who is a resident 
+  assistant and where they live. This will help show which resident assistant is over 
+  each apartment by attaching their ID to each one.
+
+	To better understand who needs to pay rent each month, we created the rent table that 
+  shows the TenantID, the date, how much they owe, and if they paid for the month or 
+  not. We want the Date column to help us understand when each payment was due. 
+
+	We decided as a group that to increase simplicity we would actually make more 
+  tables with smaller increments of data. We really could have fit more information 
+  within the Building table or Administrator table, but we found it more simple to 
+  keep some information separate from other tables.
+
+	One piece of data that would be useful would be the tenant’s birthday. It would 
+  be very beneficial to know their birthday to understand if each tenant is over 
+  the age of 18 or not. We could also send them friendly birthday cards on the month 
+  of their birthdays each year. Another piece of data that is missing is the janitor’s 
+  phone numbers. In case of emergencies it would be very handy to have their phone numbers 
+  when incidents happen. Lastly, the administrators’ emails could help communication within 
+  each building when they are not available to talk on the phone. It would be easier for 
+  small tasks to send an email instead of calling every time.
+
+	In conclusion, we organized the database to show the data that we had, but there are many 
+  improvements that could be made to both the database and the data itself.
